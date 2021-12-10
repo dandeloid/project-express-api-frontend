@@ -3,13 +3,21 @@ import styled from 'styled-components'
 
 const Heading = styled.h1`
   color: #01FF70;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
-  margin: 50px;
+  margin: 70px;
+`
+const Heading2 = styled.h1`
+  color: #01FF70;
+  font-size: 24px;
+  text-align: center;
+  margin: 90px 0 30px 0;
+  text-decoration: underline;
 `
 const FlexDiv = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 50px;
 `
@@ -121,7 +129,7 @@ export const App = () => {
             </FlexDiv>
 
           </div>
-          <Heading>List of all books:</Heading>
+          <Heading2>List of all books:</Heading2>
           {books.map((book) => (
             <BooksDiv key={book.bookID}>
               <IdText>{book.bookID}.</IdText>

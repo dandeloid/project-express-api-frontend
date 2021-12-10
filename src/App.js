@@ -81,7 +81,7 @@ export const App = () => {
             <FlexDiv>
               <div>
                 <p>Books by Id nr:</p>
-                <StyledInput type="text" id="id" onChange={(event) => setInput(event.target.value)} onKeyDown={(event) => checkKey(event)}/>
+                <StyledInput type="text" id="id" onChange={(event) => setInput(event.target.value)}/>
                 <a href={`https://a-book-api.herokuapp.com/books/id/${input}`}>
                   <GetButton><GetSpan>GET</GetSpan></GetButton>
                 </a>
@@ -91,7 +91,7 @@ export const App = () => {
                 <p>Books by Title:</p>
                 <StyledInput type="text" id="id" onChange={(event) => setInput(event.target.value)}/>
                 <a href={`https://a-book-api.herokuapp.com/books?title=${input}`}>
-                <GetButton><GetSpan>GET</GetSpan></GetButton>
+                <GetButton onClick><GetSpan>GET</GetSpan></GetButton>
                 </a>
               </div>
 
